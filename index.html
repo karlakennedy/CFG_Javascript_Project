@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+
+<html lang='en'> 
+<head>  
+    <meta charset="UTF-8">  
+    <title>Checking Age Before Entry to Website</title>
+
+    <!-- Required Bootstrap Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+  
+    <!-- Icons from Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+    <!-- Linking CSS Sheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <body>
+        <!-- Naviation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-custom-1 shadow sticky-top">
+                  <a class="navbar-brand">Cocktail Connoisseur</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+        
+  
+
+<!-- Adding style components for buttons-->
+    <style>
+        .container {
+          height: 200px;
+          position: relative;
+          border: 3px solid black;
+          margin-top: 50px;
+          background-color:gray;
+        }
+        
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+
+        h1 {text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .space {
+            width: 10px;
+            height: auto;
+            display: inline-block;
+            }
+
+    </style>
+    
+
+    <div class="container">
+
+
+        <h1> Please confirm you are over 18 years of age</h1>  
+        <br> 
+        <div class="center">
+
+        <button id="btn1" class="float-left submit-button" style="margin:5px;">Yes</button>
+        <script type="text/javascript">
+            document.getElementById("btn1").onclick = function () {
+                location.href = "home.html";
+            };
+        </script>
+
+        <div class="space">
+        </div>
+
+        <button id="btn2" class="float-left submit-button" style="margin:5px;">No</button>
+        <script type="text/javascript">
+            document.getElementById("btn2").onclick = function () {
+                location.href = "https://www.drinkaware.ie/";
+            };
+        </script>
+        </div>
+    </div>

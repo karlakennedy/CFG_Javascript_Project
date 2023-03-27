@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+
+<html lang='en'> 
+    <head>
+        <!-- Required Bootstrap Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+      
+        <!-- Icons from Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+        <!-- Linking CSS Sheet -->
+        <link rel="stylesheet" href="./css/styles.css">
+      
+        <title>Cocktail Connoisseur</title>
+      </head>
+
+      <body>
+<!-- Naviation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom-1 shadow sticky-top">
+          <a class="navbar-brand" href="index.html">Cocktail Connoisseur</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About the Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="favourites.html">Favourites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gin.html">Gin</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="vodka.html">Vodka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rum.html">Rum</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+            <div id="like_button_container"></div>
+
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+            <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+            <!-- Load our React component. -->
+            <script src="./js/likebutton.js"></script>
+
+        </body>
